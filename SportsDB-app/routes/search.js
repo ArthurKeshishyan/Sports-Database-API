@@ -21,9 +21,10 @@ router.get('/', async (req, res) => {
       $inc: { searchCount: searchResults.length },
       $setOnInsert: { searchTerm: keyword, selections: [] }
     },
-    { upsert: true }
+    { 
+        upsert: true
+    }
   );
-
   res.status(200).json({
     searchTerm: keyword,
     results: searchResults

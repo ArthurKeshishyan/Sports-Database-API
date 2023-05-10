@@ -1,12 +1,12 @@
 {
-  "name": "midterm",
+  "name": "final_project",
   "version": "1.0.0",
-  "description": "Server application which interacts with sportsDB API",
+  "description": "Stateless server application which interacts with sportsDB API",
   "main": "server.js",
   "scripts": {
     "dev": "npx nodemon server.js"
   },
-  "author": "Shant Hovagimian and Arthur Keshishyan",
+  "author": "Arthur Keshishyan and Shant Hovagimian",
   "license": "ISC",
   "dependencies": {
     "cdnjs-module": "file:../cdnjs-module",

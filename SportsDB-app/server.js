@@ -1,8 +1,8 @@
 const express = require('express');
 const MongoClient = require('mongodb').MongoClient;
-const searchRouter = require('./routes/search');
+const search = require('./routes/search');
 const config = require('./config.json');
-const historyRouter = require('./routes/history');
+const history = require('./routes/history');
 const port = 8888;
 
 const app = express();
@@ -17,7 +17,7 @@ MongoClient.connect(mongoURL, { useNewUrlParser: true, useUnifiedTopology: true 
   .catch(error => console.error(error));
 
 app.use(express.json());
-app.use('/search', searchRouter);
-app.use('/history', historyRouter);
+app.use('/search', search);
+app.use('/history', history);
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
