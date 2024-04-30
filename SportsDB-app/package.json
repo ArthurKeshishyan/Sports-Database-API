@@ -1,12 +1,12 @@
 {
-  "name": "final_project",
+  "name": "SportsDB_Project",
   "version": "1.0.0",
   "description": "Stateless server application which interacts with sportsDB API",
   "main": "server.js",
   "scripts": {
     "dev": "npx nodemon server.js"
   },
-  "author": "Arthur Keshishyan and Shant Hovagimian",
+  "author": "Arthur Keshishyan",
   "license": "ISC",
   "dependencies": {
     "cdnjs-module": "file:../cdnjs-module",
