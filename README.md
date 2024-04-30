@@ -1,2 +1,2 @@
-# CS4220-Final
+# Sports Database API
 Server application
